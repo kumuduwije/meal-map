@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meal_nav"
+    app:startDestination="@id/searchMeal">
+
+    <fragment
+        android:id="@+id/searchMeal"
+        android:name="com.example.mealmap.searchMeal"
+        android:label="fragment_search_meal"
+        tools:layout="@layout/fragment_search_meal" />
+</navigation>
