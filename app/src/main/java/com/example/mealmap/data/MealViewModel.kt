@@ -9,8 +9,10 @@ import kotlinx.coroutines.launch
 
 class MealViewModel(application: Application): AndroidViewModel(application){
 
-    private val readAllData : LiveData<List<Meal>>
+    val  readAllData : LiveData<List<Meal>>
+
     private val repository: MealRepository
+
 
     init{
         val mealDao = MealDatabase.getDatabase(application).mealDao()
@@ -24,6 +26,14 @@ class MealViewModel(application: Application): AndroidViewModel(application){
             repository.addMeal(meal)
         }
     }
+
+    fun getMealByName (mealName: String){
+        viewModelScope.launch(Dispatchers.IO)
+        {
+            repository.getMealByName(mealName)
+        }
+    }
+
 
 
 }

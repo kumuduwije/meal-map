@@ -10,7 +10,7 @@ import com.google.gson.Gson
 @TypeConverters(IngredientConverter::class)
 data class Meal(
     @PrimaryKey(autoGenerate = true)
-    val idMeal: Int,
+    val idMeal: Int?,
     val meal: String?,
     val drinkAlternate: String?,
     val category: String?,

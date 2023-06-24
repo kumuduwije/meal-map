@@ -1,6 +1,5 @@
 package com.example.mealmap.data
 
-
 import androidx.lifecycle.LiveData
 
 
@@ -9,6 +8,14 @@ class MealRepository(private val mealDao: MealDao) {
 
     suspend fun addMeal (meal: Meal)  {
         mealDao.addMeal(meal)
+    }
+
+    suspend fun getMealByName(mealName: String){
+        mealDao.getMealByName(mealName)
+    }
+
+    suspend fun getMealByIngredient(ingredientName: String){
+        mealDao.getMealByIngredient(ingredientName)
     }
 
 

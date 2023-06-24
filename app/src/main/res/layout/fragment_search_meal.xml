@@ -4,51 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".searchMeal">
+    tools:context=".fragments.searchMealByIngredient.SearchMealFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
+    <!--    <RelativeLayout-->
+<!--        android:layout_width="298dp"-->
+<!--        android:layout_height="449dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:padding="5dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/saveToDb"-->
+<!--        tools:context=".MainActivity"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:textColor="#6C6C6C"-->
+<!--            android:textSize="12sp"-->
+<!--            android:textStyle="italic" />-->
+<!--    </RelativeLayout>-->
+
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="506dp"
+        android:padding="30dp"
+        android:scrollbars="vertical"
+        android:textColor="#DFD9D9"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveToDb"
+        app:layout_constraintVertical_bias="0.36" />
 
     <EditText
-        android:id="@+id/typedText"
-        android:layout_width="299dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="112dp"
+        android:id="@+id/searchMealTextArea"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Search Meal:"
         android:inputType="textPersonName"
-        android:text="Enter food:"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
-        android:text="Retreive meal"
+        android:id="@+id/saveToDb"
+        android:layout_width="256dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FF5722"
+        android:fontFamily="@font/arvo"
+        android:text="Save meals to Database"
         android:textAllCaps="false"
+        android:textColor="#FFFFFF"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/typedText" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="139dp"
-        android:layout_height="47dp"
-        android:layout_marginEnd="48dp"
-        android:text="Save meal"
-        android:textAllCaps="false"
-        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="205dp" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <Button
+        android:id="@+id/retrieveBtn"
+        android:layout_width="255dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#009688"
+        android:fontFamily="@font/arvo"
+        android:text="Retrieve Meals"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveToDb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
