@@ -13,8 +13,6 @@
     <td><img src="https://github.com/kumuduwije/meal-map/assets/54832037/42721ac1-6e3a-42cb-befa-aa9b7e505268" alt="Search from the web" width="250px"></td>
     <td><img src="https://github.com/kumuduwije/meal-map/assets/54832037/2313b8bf-7560-4427-8670-a36546f07826" alt="From database" width="250px"></td>
   </tr>
-      
-
 </table>
 
 
